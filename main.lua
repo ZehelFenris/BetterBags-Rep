@@ -8,7 +8,7 @@ local categories = addon:GetModule('Categories')
 local L = addon:GetModule('Localization')
 
 ---@class Context: AceModule
-local Context = BetterBags:GetModule('Context')
+local Context = addon:GetModule('Context')
 local ctx = Context:New('Rep_AddItemToCategory')
 
 --Classic
@@ -18,7 +18,7 @@ classicItems = {
 	"208132", --Stormwind Insignia
 	"208133", --Orgrimmar Insignia
 }
-for key,val in pairs(classicItems) do
+for _,val in pairs(classicItems) do
 	categories:AddItemToCategory(ctx, val, L:G("Rep - Classic"))
 end
 
