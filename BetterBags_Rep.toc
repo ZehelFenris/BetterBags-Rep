@@ -1,0 +1,9 @@
+## Interface: 110000
+## Title: BetterBags - Rep
+## Author: Zehel Fenris
+## Version: 1.0.0
+## Notes: Category for Rep tokens.
+## X-Curse-Project-ID: ??
+## Dependencies: BetterBags
+
+main.lua
