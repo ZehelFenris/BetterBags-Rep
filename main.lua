@@ -22,12 +22,17 @@ end
 bcItems = {
 	"", --
 }
+for key in bcItems do
+	categories:AddItemToCategory(key, L:G("Rep - BC"))
+end
 
 --Wrath of the lich king
 wrathItems = {
 	"", --
 }
-
+for key in wrathItems do
+	categories:AddItemToCategory(key, L:G("Rep - Wrath"))
+end
 
 --Cataclysm
 cataItems = {
@@ -38,7 +43,9 @@ cataItems = {
 	"133159", --Commendation of The Earthen Ring
 	"133160", --Commendation of Therazane
 }
-
+for key in cataItems do
+	categories:AddItemToCategory(key, L:G("Rep - Cata"))
+end
 
 --Mist of Pandaria
 mopItems = {
@@ -68,16 +75,30 @@ mopItems = {
 	"143946", --Commendation of The Anglers
 	"143947", --Commendation of Emperor Shaohao
 }
-
+for key in mopItems do
+	categories:AddItemToCategory(key, L:G("Rep - MoP"))
+end
 
 --Warlords of Draenor
 wodItems = {
-	"128315", --Medallion of the Legion
 	"117492", --Relic of Rukhmar
 	"120148", --Insignia of Vol'jin's Spear
 	"120149", --Insignia of Wrynn's Vanguard
+	"128315", --Medallion of the Legion
+	"167924", --Commendation of the Arakkoa Outcasts
+	"167925", --Commendation of the Order of the Awakened
+	"167926", --Commendation of the Steamwheedle Preservation Society
+	"167927", --Commendation of the Saberstalkers
+	"167928", --Commendation of the Frostwolf Orcs
+	"167929", --Commendation of the Council of Exarchs
+	"167930", --Commendation of the Laughing Skull Orcs
+	"167932", --Commendation of the Sha'tari Defense
+	"168017", --Commendation of Vol'jin's Headhunters
+	"168018", --Commendation of the Hand of the Prophet
 }
-
+for key in wodItems do
+	categories:AddItemToCategory(key, L:G("Rep - WoD"))
+end
 
 --Legion
 legionItems = {
@@ -121,32 +142,109 @@ legionItems = {
 	"147412", --Greater Highmountain Tribe Insignia
 	"147413", --Greater Nightfallen Insignia
 	"147414", --Greater Valarjar Insignia
+	"147415", --Greater Wardens Insignia
+	"147416", --Arcane Tablet of Falanaar
+	"147418", --Arcane Remnant of Falanaar
+	"147727", --Greater Legionfall Insignia
+	"150925", --Greater Valarjar Insignia
+	"150926", --Greater Dreamweaver Insignia
+	"150927", --Greater Court of Farondis Insignia
+	"150928", --Greater Highmountain Tribe Insignia
+	"150929", --Greater Wardens Insignia
+	"150930", --Greater Nightfallen Insignia
+	"152464", --Greater Legionfall Insignia
+	"152954", --Greater Argussian Reach Insignia
+	"152955", --Greater Army of the Light Insignia
+	"152956", --Greater Army of the Light Insignia
+	"152957", --Army of the Light Insignia
+	"152958", --Army of the Light Insignia
+	"152959", --Argussian Reach Insignia
+	"152960", --Argussian Reach Insignia
+	"152961", --Greater Argussian Reach Insignia
 	"153113", --Demon's Soulstone
+	"187610", --Court of Farondis Insignia
 }
-
+for key in legionItems do
+	categories:AddItemToCategory(key, L:G("Rep - Legion"))
+end
 
 --Battle for Azeroth
 bfaItems = {
+	"168497", --Rustbolt Resistance Insignia
+	"169941", --Ceremonial Ankoan Scabbard
+	"169942", --Vibrant Sea Blossom
+	"170079", --Abyssal Conch
+	"170081", --Abyssal Conch
+	"173374", --Rajani Insignia
+	"173375", --Rajani Insignia
+	"173376", --Uldum Accord Insignia
+	"173377", --Uldum Accord Insignia
+	"173736", --Layered Information Kernel of E-steam
+	"173947", --Glittering Abyssal Conch
+	"173948", --Glittering Abyssal Conch
+	"174501", --Ornate Voldunai Jewelry
+	"174502", --Tear of Azeroth
+	"174503", --Exotically Spiced Carrot
+	"174504", --Proudmoore War Copper
+	"174505", --Tide-speaker's Tome
+	"174506", --Golden Insect Wings
+	"174507", --Fallen Soldier's Insignia
+	"174508", --Fallen Soldier's Insignia
+	"174518", --Jani Figurine
+	"174519", --Verdant Hills of Chokingvine - Page 17
+	"174521", --Transferable Kernel of E-steam
+	"174522", --Waveswept Abyssal Conch
+	"174523", --Waveswept Abyssal Conch
 	"208134", --Rustbolt Resistance Insignia
 }
-
+for key in bfaItems do
+	categories:AddItemToCategory(key, L:G("Rep - BfA"))
+end
 
 --Shadowlands
 slItems = {
-	"", --
+	"178147", --Army of the Darkness Insignia
+	"178586", --Kyrian Armaments
+	"178587", --Maldraxxian Armaments
+	"178588", --Fae Armaments
+	"178589", --Venthyr Armaments
+	"178590", --Storied Maldraxxian Boneblade
+	"178591", --Ancient Venthyr Relic
+	"178592", --Venerable Kyrian Defender
+	"178593", --Intricate Fae Groveweave
+	"180293", --Night Fae Insignia
+	"184119", --Spare Heart
+	"184120", --Spare Brain
+	"184121", --Spare Eye
+	"184122", --Spare Foot
+	"184124", --Spare Stomach
+	"190339", --Enlightened Offering
+	"190941", --Teaching of the Elders
+	"191299", --Tribute to the Enlightened
 }
-
+for key in slItems do
+	categories:AddItemToCategory(key, L:G("Rep - SL"))
+end
 
 --Dragonflight
 dfItems = {
+	"192055", --Dragon Isles Artifact
 	"198790", --I.O.U
+	"199906", --Titan Relic
+	"200093", --Centaur Hunting Trophy
+	"200224", --Mark of Sargha
 	"200285", --Dragonscale Expedition Insignia
 	"200287", --Iskaara Tuskarr Insignia
 	"200288", --Maruuk Centaur Insignia
 	"200289", --Valdrakken Accord Insignia
+	"200443", --Dragon Isles Artifact
+	"200447", --Centaur Hunting Trophy
+	"200450", --Titan Relic
 	"200452", --Dragonscale Expedition Insignia
 	"200454", --Maruuk Centaur Insignia
 	"200455", --Valdrakken Accord Insignia
+	"201411", --Ancient Vault Artifact
+	"201412", --Ancient Vault Artifact
 	"201779", --Menthra's Blessing
 	"201781", --Memory of Tyr
 	"201782", --Tyr's Blessing
@@ -155,6 +253,9 @@ dfItems = {
 	"201922", --Iskaara Tuskarr Insignia
 	"201923", --Maruuk Centaur Insignia
 	"201924", --Valdrakken Accord Insignia
+	"201991", --Sargha's Signet
+	"202017", --Liberated Furbolg Artifacts
+	"202018", --Intact Scribe Stick
 	"202091", --Dragonscale Expedition Insignia
 	"202092", --Iskaara Tuskarr Insignia
 	"202093", --Valdrakken Accord Insignia
@@ -208,9 +309,14 @@ dfItems = {
 	"211416", --Dream Wardens Insignia
 	"211417", --Dream Wardens Insignia
 }
-
+for key in dfItems do
+	categories:AddItemToCategory(key, L:G("Rep - DF"))
+end
 
 --The War Within
 twwItems = {
 	"", --
 }
+for key in twwItems do
+	categories:AddItemToCategory(key, L:G("Rep - TWW"))
+end
