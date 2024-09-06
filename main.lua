@@ -7,6 +7,10 @@ local categories = addon:GetModule('Categories')
 ---@class Localization: AceModule
 local L = addon:GetModule('Localization')
 
+---@class Context: AceModule
+local Context = BetterBags:GetModule('Context')
+local ctx = Context:New('Rep_AddItemToCategory')
+
 --Classic
 classicItems = {
 	"12844", --Argent Dawn Valor Token
@@ -14,24 +18,24 @@ classicItems = {
 	"208132", --Stormwind Insignia
 	"208133", --Orgrimmar Insignia
 }
-for key in classicItems do
-	categories:AddItemToCategory(key, L:G("Rep - Classic"))
+for key,val in pairs(classicItems) do
+	categories:AddItemToCategory(ctx, val, L:G("Rep - Classic"))
 end
 
 --Burning Crusade
 bcItems = {
 	"", --
 }
-for key in bcItems do
-	categories:AddItemToCategory(key, L:G("Rep - BC"))
+for key,val in ipairs(bcItems) do
+	categories:AddItemToCategory(val, L:G("Rep - BC"))
 end
 
 --Wrath of the lich king
 wrathItems = {
 	"", --
 }
-for key in wrathItems do
-	categories:AddItemToCategory(key, L:G("Rep - Wrath"))
+for key,val in ipairs(wrathItems) do
+	categories:AddItemToCategory(val, L:G("Rep - Wrath"))
 end
 
 --Cataclysm
@@ -43,8 +47,8 @@ cataItems = {
 	"133159", --Commendation of The Earthen Ring
 	"133160", --Commendation of Therazane
 }
-for key in cataItems do
-	categories:AddItemToCategory(key, L:G("Rep - Cata"))
+for key,val in ipairs(cataItems) do
+	categories:AddItemToCategory(val, L:G("Rep - Cata"))
 end
 
 --Mist of Pandaria
@@ -75,8 +79,8 @@ mopItems = {
 	"143946", --Commendation of The Anglers
 	"143947", --Commendation of Emperor Shaohao
 }
-for key in mopItems do
-	categories:AddItemToCategory(key, L:G("Rep - MoP"))
+for key,val in ipairs(mopItems) do
+	categories:AddItemToCategory(val, L:G("Rep - MoP"))
 end
 
 --Warlords of Draenor
@@ -96,8 +100,8 @@ wodItems = {
 	"168017", --Commendation of Vol'jin's Headhunters
 	"168018", --Commendation of the Hand of the Prophet
 }
-for key in wodItems do
-	categories:AddItemToCategory(key, L:G("Rep - WoD"))
+for key,val in ipairs(wodItems) do
+	categories:AddItemToCategory(val, L:G("Rep - WoD"))
 end
 
 --Legion
@@ -164,8 +168,8 @@ legionItems = {
 	"153113", --Demon's Soulstone
 	"187610", --Court of Farondis Insignia
 }
-for key in legionItems do
-	categories:AddItemToCategory(key, L:G("Rep - Legion"))
+for key,val in ipairs(legionItems) do
+	categories:AddItemToCategory(val, L:G("Rep - Legion"))
 end
 
 --Battle for Azeroth
@@ -197,8 +201,8 @@ bfaItems = {
 	"174523", --Waveswept Abyssal Conch
 	"208134", --Rustbolt Resistance Insignia
 }
-for key in bfaItems do
-	categories:AddItemToCategory(key, L:G("Rep - BfA"))
+for key,val in ipairs(bfaItems) do
+	categories:AddItemToCategory(val, L:G("Rep - BfA"))
 end
 
 --Shadowlands
@@ -222,8 +226,8 @@ slItems = {
 	"190941", --Teaching of the Elders
 	"191299", --Tribute to the Enlightened
 }
-for key in slItems do
-	categories:AddItemToCategory(key, L:G("Rep - SL"))
+for key,val in ipairs(slItems) do
+	categories:AddItemToCategory(val, L:G("Rep - SL"))
 end
 
 --Dragonflight
@@ -309,14 +313,14 @@ dfItems = {
 	"211416", --Dream Wardens Insignia
 	"211417", --Dream Wardens Insignia
 }
-for key in dfItems do
-	categories:AddItemToCategory(key, L:G("Rep - DF"))
+for key,val in ipairs(dfItems) do
+	categories:AddItemToCategory(val, L:G("Rep - DF"))
 end
 
 --The War Within
 twwItems = {
 	"", --
 }
-for key in twwItems do
-	categories:AddItemToCategory(key, L:G("Rep - TWW"))
+for key,val in ipairs(twwItems) do
+	categories:AddItemToCategory(val, L:G("Rep - TWW"))
 end
